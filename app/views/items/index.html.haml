@@ -1,0 +1,14 @@
+%h1 Items#index
+
+%table
+  %thead
+    %tr
+      %th Checked 
+      %th Name
+      %th Due Date
+  %tbody
+    - @items.each do |item|
+      %tr
+        %td= item.checked.to_s
+        %td= item.name
+        %td= item.due_datetime
