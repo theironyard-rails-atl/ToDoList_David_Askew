@@ -1,0 +1,12 @@
+%h1 All Lists
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Title
+      %th Description
+  %tbody
+    - @lists.each do |list|
+      %tr
+        %td= list.title
+        %td= list.description
