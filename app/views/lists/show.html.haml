@@ -1,0 +1,14 @@
+%h1 All Items for :  #{@list.title} 
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Checked 
+      %th Name
+      %th Due Date
+  %tbody
+    - @list.items.each do |item|
+      %tr
+        %td= item.checked.to_s
+        %td= item.name
+        %td= item.due_datetime
