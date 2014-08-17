@@ -1,5 +1,10 @@
 %h1 All Lists
 
+= form_tag(lists_path, method: "post", :id => 'add_list_form') do
+  = text_field_tag "title"
+  = text_field_tag "description"
+  = submit_tag "Add" 
+
 %table.table.table-striped
   %thead
     %tr
