@@ -32,6 +32,7 @@ group :development do
   gem 'binding_of_caller'
 end
 
+gem 'twitter-bootstrap-rails'
 gem 'haml-rails'
 
 # Use ActiveModel has_secure_password
