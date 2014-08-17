@@ -2,7 +2,7 @@ Rails.application.routes.draw do
 
 #  get 'items/index'
 
-  resources :items, :only => [:index]
+  resources :items, :only => [:index, :create]
 
   resources :lists, :only => [:index, :show, :create]
   # The priority is based upon order of creation: first created -> highest priority.
