@@ -17,5 +17,8 @@
       %tr
         %td= item.checked.to_s
         %td= item.name
-        %td= item.due_datetime.in_time_zone("Eastern Time (US & Canada)")
+        - if item.due_datetime != nil
+          %td= item.due_datetime.in_time_zone("Eastern Time (US & Canada)")
+        - else
+          %td
         -#TODO: do not hardcode timezone
