@@ -2,7 +2,7 @@ class ListsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @lists = List.all
+    @lists = List.where(user_id: current_user)
   end
 
   def show
@@ -13,6 +13,7 @@ class ListsController < ApplicationController
     list = List.new
     list.title = params[:title]
     list.description = params[:description]
+    list.user_id = current_user.id
     list.save!
     redirect_to lists_path
   end

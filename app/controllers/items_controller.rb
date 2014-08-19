@@ -2,7 +2,9 @@ class ItemsController < ApplicationController
   before_action :authenticate_user!
 
   def index
-    @items = Item.all
+#    @lists = List.where(user_id: current_user)
+#    @items = Item.where(list_id: @lists)#Item.all
+     @items = current_user.items
   end
   
   def create
