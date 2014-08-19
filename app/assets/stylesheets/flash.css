@@ -1,0 +1,15 @@
+.alert {
+   background-color: red;
+   border-color: #D6E9C6;
+   color: black;
+   padding: 20px 20px 20px 20px;
+   margin: 20px 20px 20px 20px;
+}
+
+.notice {
+   background-color: #66E167;
+   border-color: #D6E9C6;
+   color: black;
+   padding: 20px 20px 20px 20px;
+   margin: 20px 20px 20px 20px;
+}
